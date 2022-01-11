@@ -53,7 +53,7 @@ console.log("***** Only Poison Type *****");
 const poisonType = pokemon.filter( pkmn => pkmn.types == "poison");
 console.log(poisonType);
 
-console.log("***** Flying second type *****");
+console.log("***** Flying as second type *****");
 const flyingSecond = pokemon.filter( pkmn => pkmn.types[1] == "flying");
 console.log(flyingSecond);
 
