@@ -29,7 +29,7 @@ const bListPkmn = pokemon.filter( p => p.name[0] === "B" );
 const pkmnIds = pokemon.map( p => p.id );
 
 
-console.log("***** Divisible by 3 *****")
+console.log("***** ID divisible by 3 *****")
 const divByThree = pokemon.filter( pkmn => pkmn.id % 3 === 0);
 console.log(divByThree);
 
@@ -49,7 +49,7 @@ console.log("***** ID Greater than 99 *****");
 const greaterThan99 = pokemon.filter(pkmn => pkmn.id > 99 ? pkmn.name : null );
 console.log(greaterThan99);
 
-console.log("***** Poison Type *****");
+console.log("***** Only Poison Type *****");
 const poisonType = pokemon.filter( pkmn => pkmn.types == "poison");
 console.log(poisonType);
 
