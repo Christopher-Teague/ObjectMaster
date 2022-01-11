@@ -46,7 +46,7 @@ const pkmnNames = pokemon.map( pkmn => pkmn.name);
 console.log(pkmnNames);
 
 console.log("***** ID Greater than 99 *****");
-const greaterThan99 = pokemon.filter(pkmn => pkmn.id > 99 ? pkmn.name : null );
+const greaterThan99 = pokemon.filter(pkmn => pkmn.id > 99).map( pkmn => pkmn.name);
 console.log(greaterThan99);
 
 console.log("***** Only Poison Type *****");
