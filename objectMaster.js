@@ -50,11 +50,11 @@ const greaterThan99 = pokemon.filter(pkmn => pkmn.id > 99).map( pkmn => pkmn.nam
 console.log(greaterThan99);
 
 console.log("***** Only Poison Type *****");
-const poisonType = pokemon.filter( pkmn => pkmn.types == "poison");
+const poisonType = pokemon.filter( pkmn => pkmn.types == "poison").map( pkmn => pkmn.name);
 console.log(poisonType);
 
 console.log("***** Flying as second type *****");
-const flyingSecond = pokemon.filter( pkmn => pkmn.types[1] == "flying");
+const flyingSecond = pokemon.filter( pkmn => pkmn.types[1] == "flying").map(pkmn => pkmn.types[0]);
 console.log(flyingSecond);
 
 console.log("***** Number of Normal type *****")
